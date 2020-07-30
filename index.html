@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Loan Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="heading">Loan Calculator</h1>
+      <div class="grid">
+        <form id="loan-form">
+          <div class="form-group">
+            <div class="input-group">
+              <label for="amount" class="input-addon">$</label>
+              <input type="number" id="amount" placeholder="Loan Amount" />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <label for="interest" class="input-addon">%</label>
+              <input type="number" id="interest" placeholder="Interest" />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <input type="number" id="years" placeholder="Years To Repay" />
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Calculate" class="btn" />
+          </div>
+        </form>
+        <!-- Loading png -->
+        <div id="loading">
+          <img src="/img/loading2.gif" alt="loading">
+        </div>
+        <!-- Result -->
+        <div id="results">
+          <h4>Results</h4>
+          <div class="form-group">
+            <div class="input-group">
+              <label for="monthly-payment" class="input-addon"
+                >Monthly Payment</label
+              >
+              <input type="number" id="monthly-payment" disabled />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-group">
+              <label for="total-payment" class="input-addon"
+                >Total Payment</label
+              >
+              <input type="number" id="total-payment" disabled />
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <div class="input-group">
+              <label for="total-interests" class="input-addon"
+                >Total Interests</label
+              >
+              <input type="number" id="total-interest" disabled />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- External JS file -->
+    <script src="app.js"></script>
+  </body>
+</html>
